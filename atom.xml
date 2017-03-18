@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-18T08:01:57.005Z</updated>
+  <updated>2017-03-18T08:15:12.316Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,28 +16,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>mytest</title>
-    <link href="http://yoursite.com/2017/03/18/mytest/"/>
-    <id>http://yoursite.com/2017/03/18/mytest/</id>
-    <published>2017-03-18T08:01:56.000Z</published>
-    <updated>2017-03-18T08:01:57.005Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>test</title>
     <link href="http://yoursite.com/2017/03/17/test/"/>
     <id>http://yoursite.com/2017/03/17/test/</id>
     <published>2017-03-16T17:44:32.000Z</published>
-    <updated>2017-03-18T06:49:53.590Z</updated>
+    <updated>2017-03-18T08:15:12.316Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>this a test</p>
+</blockquote>
+<p>   <img src="http://i.imgur.com/WewUm1D.jpg" alt=""></p>
+<h1 id="This-is-a-Test"><a href="#This-is-a-Test" class="headerlink" title="This is a  Test"></a>This is a  Test</h1><h2 id="Nothing-here"><a href="#Nothing-here" class="headerlink" title="Nothing here"></a>Nothing here</h2><p>  <code>printf(&quot;hello wrold&quot;);</code></p>
+<blockquote>
+<p>感谢大佬 <a href="https://ryanlijianchang.github.io/" title="666" target="_blank" rel="external">https://ryanlijianchang.github.io/</a></p>
 </blockquote>
 ]]></content>
     
@@ -46,7 +37,8 @@
       &lt;blockquote&gt;
 &lt;p&gt;this a test&lt;/p&gt;
 &lt;/blockquote&gt;
-
+&lt;p&gt;   &lt;img src=&quot;http://i.imgur.com/WewUm1D.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;This-is-a-Test&quot;&gt;&lt;a href=&quot;#
     
     </summary>
     
