@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-18T15:49:33.629Z</updated>
+  <updated>2017-03-19T11:26:46.861Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/03/18/%E7%A5%AD%E9%BE%9F%E4%BB%99%E4%BA%BA/"/>
     <id>http://yoursite.com/2017/03/18/祭龟仙人/</id>
     <published>2017-03-18T14:59:20.000Z</published>
-    <updated>2017-03-18T15:49:33.629Z</updated>
+    <updated>2017-03-19T11:26:46.861Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>转载自 <a href="https://user.qzone.qq.com/982508412/infocenterptsig=Agb5*QMWa63pzalZF76bgkY8agrMnhzC5gnUvWqLdfk_" target="_blank" rel="external">室友空间</a> <strong>祭朋友文</strong>  以送别 <a href="http://baike.baidu.com/link?url=ItyvVa3RdRJeCJ6r8-Y-Mswma862Wulkwjr0r06m0zyn5v359_4F6jziVXsKMGPw2wdrd8p516NGbhw30RKrIoqUyRfaYetI6MMjrlYQ9ZNcZYrq_IEj5swEm1vHesrUTG5Ppmb8qIWTgIAyYMxU0wHftMqdGH5AENZUOKj9mXCYcgF5POhjS6CQ5Hq70VW7PZ7HliHiVDvtZlSCxj8Qla" target="_blank" rel="external">龟仙人</a>：                          </p>
@@ -35,6 +35,10 @@
     
     </summary>
     
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -43,7 +47,7 @@
     <link href="http://yoursite.com/2017/03/17/test/"/>
     <id>http://yoursite.com/2017/03/17/test/</id>
     <published>2017-03-16T17:44:32.000Z</published>
-    <updated>2017-03-18T08:15:12.316Z</updated>
+    <updated>2017-03-19T11:25:22.363Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>this a test</p>
@@ -65,6 +69,14 @@
     
     </summary>
     
+      <category term="test" scheme="http://yoursite.com/categories/test/"/>
+    
+    
+      <category term="npm" scheme="http://yoursite.com/tags/npm/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
       <category term="test" scheme="http://yoursite.com/tags/test/"/>
     
