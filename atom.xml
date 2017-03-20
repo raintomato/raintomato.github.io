@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-20T07:53:32.765Z</updated>
+  <updated>2017-03-20T07:58:01.170Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/03/19/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8EGithub%E7%9A%84hexo%E6%90%AD%E5%BB%BA/"/>
     <id>http://yoursite.com/2017/03/19/博客基于Github的hexo搭建/</id>
     <published>2017-03-19T12:41:46.000Z</published>
-    <updated>2017-03-20T07:53:32.765Z</updated>
+    <updated>2017-03-20T07:58:01.170Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>借鉴来至Ryane’s Blog 感 谢</p>
@@ -127,10 +127,6 @@ hexo d
     
       <category term="hexo,Github" scheme="http://yoursite.com/categories/hexo-Github/"/>
     
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
     
   </entry>
   

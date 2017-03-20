@@ -378,101 +378,17 @@
       
         
           
-            <blockquote>
-<p>借鉴来至Ryane’s Blog 感 谢</p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这个教程非常的适合像我们这样的小白，用Github Pages和Hexo搭建的独立博客。没有用到自己的服务器，用的是Github的托管，可以为你免费提供服务器。不用去配置服务器，数据库等等。当然这是一部分适合我们这样的小白，以后慢慢有了经验大家还是可以自己租一个服务器折腾。</p>
-<h1 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h1><p><img src="http://i.imgur.com/0ZBb4h9.jpg" alt=""></p>
-</blockquote>
-<p><a href="https://github.com/" target="_blank" rel="external">Github里面的东西是真的好 </a></p>
-<h1 id="下面直接开始"><a href="#下面直接开始" class="headerlink" title="下面直接开始"></a><strong>下面直接开始</strong></h1><p>以下都是小白操作，但是我们可以边模仿边学习。以下的教程的原理，大家都可以去网上查阅。</p>
-<h2 id="安装Node-js和git"><a href="#安装Node-js和git" class="headerlink" title="安装Node.js和git"></a>安装Node.js和git</h2><p><strong>Node.js：</strong>直接从<a href="https://nodejs.org/en/download/" target="_blank" rel="external">官网</a>下就好了（注意32 和 64）</p>
-<p><strong>git:</strong>上官网，不过貌似要翻墙（64位的可以<a href="https://pan.baidu.com/s/1i4xAM9Z" target="_blank" rel="external">选择这个</a>）</p>
-<ul>
-<li>安装教程：<a href="http://jingyan.baidu.com/article/90895e0fb3495f64ed6b0b50.html" target="_blank" rel="external">如何在window下安装Git</a></li>
-<li>Git入门：<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" target="_blank" rel="external">廖雪峰老师的Git教程</a></li>
-</ul>
-<h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title=".hexo安装"></a>.hexo安装</h2><p>安装完Git之后，桌面右键鼠标，点击Git Bash Here，输入npm命令即可安装</p>
-<pre><code>npm install hexo-cli -g
-npm install hexo --save
-#如果命令无法运行，可以尝试更换taobao的npm源
-npm install -g cnpm --registry=https://registry.npm.taobao.org`
-</code></pre><h2 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title=".创建文件夹"></a>.创建文件夹</h2><p> 安装完成之后，根据自己的爱好，在自己喜欢的位置新建博客目录（比如：D:\blog\hexo）<br>进入D:\blog\hexo，右键鼠标。点击Git Bash Here，进入Git命令框，执行以下操作。</p>
-<pre><code>$ hexo init
-$ npm install
-</code></pre><h2 id="安装相关插件"><a href="#安装相关插件" class="headerlink" title="安装相关插件"></a>安装相关插件</h2><pre><code>npm install hexo-generator-index --save
-npm install hexo-generator-archive --save
-npm install hexo-generator-category --save
-npm install hexo-generator-tag --save
-npm install hexo-server --save
-npm install hexo-deployer-git --save
-npm install hexo-deployer-heroku --save
-npm install hexo-deployer-rsync --save
-npm install hexo-deployer-openshift --save
-npm install hexo-renderer-marked@0.2 --save
-npm install hexo-renderer-stylus@0.2 --save
-npm install hexo-generator-feed@1 --save
-npm install hexo-generator-sitemap@1 --save
-</code></pre><h2 id="先在本地查看效果"><a href="#先在本地查看效果" class="headerlink" title="先在本地查看效果"></a>先在本地查看效果</h2><p>在Hexo目录下执行git命令：</p>
-<pre><code>hexo generate
-hexo server
-</code></pre><p>登陆localhost:4000，即可看到本地的效果如下：</p>
-<p><img src="http://i.imgur.com/wcLE2HS.png" alt=""></p>
-<h2 id="本地部分已经结束"><a href="#本地部分已经结束" class="headerlink" title="本地部分已经结束"></a>本地部分已经结束</h2><p>现在本地工作已经做好，我们再把做好的东西部署到Github就好了</p>
-<h2 id="将本地博客部署到Github-Pages上面"><a href="#将本地博客部署到Github-Pages上面" class="headerlink" title="将本地博客部署到Github Pages上面"></a>将本地博客部署到Github Pages上面</h2><h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><ol>
-<li>Github官网</li>
-<li>右上角<strong>sign up</strong>。</li>
-</ol>
-<h2 id="创建代码仓库"><a href="#创建代码仓库" class="headerlink" title="创建代码仓库"></a>创建代码仓库</h2><ol>
-<li>注册完登陆后，我们就创建一个我们自己的Github Pages项目。点击New repository。</li>
-<li>创建要点如下：<br><img src="http://i.imgur.com/aFf2Vmv.png" alt=""><br><strong>要点：</strong>一定，一定注意项目名字和用户名一定对应</li>
-</ol>
-<h2 id="配置SSh密钥"><a href="#配置SSh密钥" class="headerlink" title="配置SSh密钥"></a>配置SSh密钥</h2><p>###看看是否存在SSH密钥<br>打开Git Bash，运行：</p>
-<pre><code>$ cd ~/. ssh 
-</code></pre><p>检查你本机用户home目录下是否存在.ssh目录</p>
-<p>如果，不存在此目录，则进行第二步操作，否则，你本机已经存在ssh公钥和私钥，可以略过第二步，直接进入第三步操作。</p>
-<p>###创建一对新的SSH密钥</p>
-<pre><code>$ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
-#这将按照你提供的邮箱地址，创建一对密钥
-Generating public/private rsa key pair.
-Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]
-</code></pre><p>直接回车，则将密钥按默认文件进行存储。此时也可以输入特定的文件名，比如/c/Users/you/.ssh/github_rsa</p>
-<p>接着，根据提示，你需要输入密码和确认密码（说到这里，如果你很放心，其实可以不用密码，就是到输密码的地方，都直接回车，所以每次push就只管回车就行了。所谓的最安全的密码，就是没有密码 哈哈）。相关提示如下：</p>
-<pre><code>Enter passphrase (empty for no passphrase): [Type a passphrase]
-Enter same passphrase again: [Type passphrase again]
-</code></pre><p>输入完成之后，屏幕会显示如下信息：</p>
-<pre><code>Your identification has been saved in /c/Users/you/.ssh/id_rsa.
-Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.
-The key fingerprint is:
-01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
-</code></pre><p>###在Github账户中添加你的公钥<br>先运行以下命令，</p>
-<pre><code>clip &lt; ~/.ssh/id_rsa.pub
-</code></pre><p>然后：</p>
-<ol>
-<li>登陆GitHub,进入你的Account Settings.</li>
-</ol>
-<p><img src="http://i.imgur.com/7b9A0hQ.png" alt=""></p>
-<p>2.选择</p>
-<p><img src="http://i.imgur.com/ihG3RSS.png" alt=""></p>
-<p>3.<br><img src="http://i.imgur.com/dAYaQ6U.png" alt=""></p>
-<p>###设置用户信息</p>
-<pre><code>$ git config --global user.name &quot;cnfeat&quot;//用户名
-$ git config --global user.email  &quot;cnfeat@gmail.com&quot;//填写自己的邮箱
-</code></pre><p>###问题<br>如有问题，参考：<br><a href="Error: Permission denied (publickey" target="_blank" rel="external">GitHub Help - Generating SSH Keys</a>)<br><a href="https://help.github.com/articles/error-permission-denied-publickey/" target="_blank" rel="external">Error: Permission denied (publickey)</a></p>
-<h2 id="将本地hexo文件部署到Github库中"><a href="#将本地hexo文件部署到Github库中" class="headerlink" title="将本地hexo文件部署到Github库中"></a>将本地hexo文件部署到Github库中</h2><p>###打开自己username.github.io的项目</p>
-<p>###然后，点击HTTPs选择ＨＴＴＰＳ类型</p>
-<p>###复制地址</p>
-<p>###打开你一开始创建的Hexo文件夹（如F:\Blog\Hexo），用记事本打开刚文件夹下的_config.yml文件</p>
-<p>###修改配置</p>
-<p><img src="http://i.imgur.com/Q4aqCPP.png" alt=""></p>
-<p>##在Hexo文件夹下：</p>
-<pre><code>hexo g
-hexo d
-</code></pre><p>或直接</p>
-<pre><code>hexo g -d
-</code></pre><p>##执行完之后就可以了。</p>
-<h1 id="结语-："><a href="#结语-：" class="headerlink" title="结语 ："></a>结语 ：</h1><p>中间还有又很多可以去摸索的</p>
-
           
+借鉴来至Ryane’s Blog 感 谢
+前言这个教程非常的适合像我们这样的小白，用Github Pages和Hexo搭建的独立博客。没有用到自己的服务器，用的是Github的托管，可以为你免费提供服务器。不用去配置服务器，数据库等等。当然这是一部分适合我们这样的小白，以后慢慢有了经验大家还是可以
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/19/博客基于Github的hexo搭建/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -613,12 +529,17 @@ hexo d
       
         
           
-            <blockquote>
-<p>转载自 <a href="https://user.qzone.qq.com/982508412/infocenterptsig=Agb5*QMWa63pzalZF76bgkY8agrMnhzC5gnUvWqLdfk_" target="_blank" rel="external">室友空间</a> <strong>祭朋友文</strong>  以送别 <a href="http://baike.baidu.com/link?url=ItyvVa3RdRJeCJ6r8-Y-Mswma862Wulkwjr0r06m0zyn5v359_4F6jziVXsKMGPw2wdrd8p516NGbhw30RKrIoqUyRfaYetI6MMjrlYQ9ZNcZYrq_IEj5swEm1vHesrUTG5Ppmb8qIWTgIAyYMxU0wHftMqdGH5AENZUOKj9mXCYcgF5POhjS6CQ5Hq70VW7PZ7HliHiVDvtZlSCxj8Qla" target="_blank" rel="external">龟仙人</a>：                          </p>
-<h1 id="亲爱的朋友："><a href="#亲爱的朋友：" class="headerlink" title="亲爱的朋友："></a>亲爱的朋友：</h1><p>今天你终于入土了，我想你是安详离去的。当周一知道你去世的消息时，我是如此的悲伤，后天就是你的头七了，在社会各界人士的帮助下，今天把你安葬了，你的墓地是我在风水大师邓先生的指导下给你选择的，虽然面积不大，但在寸金寸土的北京，也值几千了。当我看到你的时候，你睁着双眼，没有瞑目，没有目击者，都不知道你是意外死亡还是故意谋杀，如果你还有什么愿望，请托梦给我吧。关于你的兄弟，我一定会好好照顾他，抚养他长大，有机会给他找个女朋友，你不要担心他了，明年我会带着他到去给你扫墓的。你前生没做坏事，所以你肯定要上天堂的，最终成为一个龟仙人。</p>
-</blockquote>
-
           
+转载自 室友空间 祭朋友文  以送别 龟仙人：                          
+亲爱的朋友：今天你终于入土了，我想你是安详离去的。当周一知道你去世的消息时，我是如此的悲伤，后天就是你的头七了，在社会各界人士的帮助下，今天把你安葬了，你的墓地是我在风水大师邓先生的指导下给你选择的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/18/祭龟仙人/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -759,16 +680,23 @@ hexo d
       
         
           
-            <blockquote>
-<p>this a test</p>
-</blockquote>
-<p>   <img src="http://i.imgur.com/WewUm1D.jpg" alt=""></p>
-<h1 id="This-is-a-Test"><a href="#This-is-a-Test" class="headerlink" title="This is a  Test"></a>This is a  Test</h1><h2 id="Nothing-here"><a href="#Nothing-here" class="headerlink" title="Nothing here"></a>Nothing here</h2><p>  <code>printf(&quot;hello wrold&quot;);</code></p>
-<blockquote>
-<p>感谢大佬 <a href="https://ryanlijianchang.github.io/" title="666" target="_blank" rel="external">https://ryanlijianchang.github.io/</a></p>
-</blockquote>
+          
+this a test
+
+   
+This is a  TestNothing here  printf(&quot;hello wrold&quot;);
+
+感谢大佬 https://ryanlijianchang.github.io/
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/17/test/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
