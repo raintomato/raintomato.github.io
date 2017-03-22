@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-21T15:21:56.400Z</updated>
+  <updated>2017-03-22T14:24:33.690Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,85 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>栈</title>
+    <link href="http://yoursite.com/2017/03/22/%E6%A0%88/"/>
+    <id>http://yoursite.com/2017/03/22/栈/</id>
+    <published>2017-03-22T14:17:14.000Z</published>
+    <updated>2017-03-22T14:24:33.690Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="c-stl栈容器stack的pop-push-等用法介绍及头文件"><a href="#c-stl栈容器stack的pop-push-等用法介绍及头文件" class="headerlink" title="c++ stl栈容器stack的pop(),push()等用法介绍及头文件"></a>c++ stl栈容器stack的pop(),push()等用法介绍及头文件</h1><h2 id="c-stl栈stack介绍"><a href="#c-stl栈stack介绍" class="headerlink" title="c++ stl栈stack介绍"></a>c++ stl栈stack介绍</h2><p>c++ stl栈stack的头文件为: </p>
+<pre><code>#include&lt;stack&gt;
+</code></pre><p>c++ stl栈stack的成员函数介绍</p>
+<p>操作    比较和分配堆栈</p>
+<p>empty()    堆栈为空则返回真</p>
+<p>pop()    移除栈顶元素</p>
+<p>push()    在栈顶增加元素</p>
+<p>size()    返回栈中元素数目</p>
+<p>top()    返回栈顶元素</p>
+<h2 id="c-stl栈stack用法代码举例1"><a href="#c-stl栈stack用法代码举例1" class="headerlink" title="c++ stl栈stack用法代码举例1"></a>c++ stl栈stack用法代码举例1</h2><pre><code>#include &quot;stdafx.h&quot;  
+#include &lt;stack&gt;  
+#include &lt;vector&gt;  
+#include &lt;deque&gt;  
+#include &lt;iostream&gt;  
+
+using namespace std;  
+
+int _tmain(int argc, _TCHAR* argv[])  
+{  
+deque&lt;int&gt; mydeque(2,100);  
+vector&lt;int&gt; myvector(2,200);  
+
+stack&lt;int&gt; first;  
+stack&lt;int&gt; second(mydeque);  
+
+stack&lt;int,vector&lt;int&gt; &gt; third;  
+stack&lt;int,vector&lt;int&gt; &gt; fourth(myvector);  
+
+cout &lt;&lt; &quot;size of first: &quot; &lt;&lt; (int) first.size() &lt;&lt; endl;  
+cout &lt;&lt; &quot;size of second: &quot; &lt;&lt; (int) second.size() &lt;&lt; endl;  
+cout &lt;&lt; &quot;size of third: &quot; &lt;&lt; (int) third.size() &lt;&lt; endl;  
+cout &lt;&lt; &quot;size of fourth: &quot; &lt;&lt; (int) fourth.size() &lt;&lt; endl;  
+
+
+return 0;  
+</code></pre><p>}</p>
+<h2 id="c-stl栈stack用法代码举例2"><a href="#c-stl栈stack用法代码举例2" class="headerlink" title="c++ stl栈stack用法代码举例2"></a>c++ stl栈stack用法代码举例2</h2><pre><code>#include &lt;iostream&gt;  
+#include &lt;stack&gt;  
+using namespace std;  
+
+int main ()  
+{  
+ stack&lt;int&gt; mystack;  
+ int sum (0);  
+
+ for (int i=1;i&lt;=10;i++) mystack.push(i);  
+
+ while (!mystack.empty())  
+{  
+ sum += mystack.top();  
+ mystack.pop();  
+ }  
+
+cout &lt;&lt; &quot;total: &quot; &lt;&lt; sum &lt;&lt; endl;  
+
+return 0;  
+}
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;c-stl栈容器stack的pop-push-等用法介绍及头文件&quot;&gt;&lt;a href=&quot;#c-stl栈容器stack的pop-push-等用法介绍及头文件&quot; class=&quot;headerlink&quot; title=&quot;c++ stl栈容器stack的pop(),push()
+    
+    </summary>
+    
+      <category term="STL" scheme="http://yoursite.com/categories/STL/"/>
+    
+    
+      <category term="数据结构，STL" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%8CSTL/"/>
+    
+  </entry>
   
   <entry>
     <title>搜索引擎核心技术与实现：基于Lucene 和 Solr</title>
@@ -56,7 +135,7 @@
     <link href="http://yoursite.com/2017/03/19/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E4%BA%8EGithub%E7%9A%84hexo%E6%90%AD%E5%BB%BA/"/>
     <id>http://yoursite.com/2017/03/19/博客基于Github的hexo搭建/</id>
     <published>2017-03-19T12:41:46.000Z</published>
-    <updated>2017-03-20T07:58:01.170Z</updated>
+    <updated>2017-03-22T06:43:43.171Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>借鉴来至Ryane’s Blog 感 谢</p>
@@ -106,11 +185,11 @@ hexo server
 <li>注册完登陆后，我们就创建一个我们自己的Github Pages项目。点击New repository。</li>
 <li>创建要点如下：<br><img src="http://i.imgur.com/aFf2Vmv.png" alt=""><br><strong>要点：</strong>一定，一定注意项目名字和用户名一定对应</li>
 </ol>
-<h2 id="配置SSh密钥"><a href="#配置SSh密钥" class="headerlink" title="配置SSh密钥"></a>配置SSh密钥</h2><p>###看看是否存在SSH密钥<br>打开Git Bash，运行：</p>
+<h2 id="配置SSh密钥"><a href="#配置SSh密钥" class="headerlink" title="配置SSh密钥"></a>配置SSh密钥</h2><p>###看看是否存在SSH密钥###<br>打开Git Bash，运行：</p>
 <pre><code>$ cd ~/. ssh 
 </code></pre><p>检查你本机用户home目录下是否存在.ssh目录</p>
 <p>如果，不存在此目录，则进行第二步操作，否则，你本机已经存在ssh公钥和私钥，可以略过第二步，直接进入第三步操作。</p>
-<p>###创建一对新的SSH密钥</p>
+<p>###创建一对新的SSH密钥###</p>
 <pre><code>$ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
 #这将按照你提供的邮箱地址，创建一对密钥
 Generating public/private rsa key pair.
@@ -124,7 +203,7 @@ Enter same passphrase again: [Type passphrase again]
 Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.
 The key fingerprint is:
 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
-</code></pre><p>###在Github账户中添加你的公钥<br>先运行以下命令，</p>
+</code></pre><p>###在Github账户中添加你的公钥###<br>先运行以下命令，</p>
 <pre><code>clip &lt; ~/.ssh/id_rsa.pub
 </code></pre><p>然后：</p>
 <ol>
@@ -140,10 +219,10 @@ $ git config --global user.email  &quot;cnfeat@gmail.com&quot;//填写自己的�
 </code></pre><p>###问题<br>如有问题，参考：<br><a href="Error: Permission denied (publickey" target="_blank" rel="external">GitHub Help - Generating SSH Keys</a>)<br><a href="https://help.github.com/articles/error-permission-denied-publickey/" target="_blank" rel="external">Error: Permission denied (publickey)</a></p>
 <h2 id="将本地hexo文件部署到Github库中"><a href="#将本地hexo文件部署到Github库中" class="headerlink" title="将本地hexo文件部署到Github库中"></a>将本地hexo文件部署到Github库中</h2><p>###打开自己username.github.io的项目</p>
 <p>###然后，点击HTTPs选择ＨＴＴＰＳ类型</p>
-<p>###复制地址</p>
-<p>###打开你一开始创建的Hexo文件夹（如F:\Blog\Hexo），用记事本打开刚文件夹下的_config.yml文件</p>
+<p>###复制地址###</p>
+<p>###打开你一开始创建的Hexo文件夹（如F:\Blog\Hexo），用记事本打开刚文件夹下的_config.yml文件###</p>
 <p>###修改配置</p>
-<p><img src="http://i.imgur.com/Q4aqCPP.png" alt=""></p>
+<p>###<br><img src="http://i.imgur.com/Q4aqCPP.png" alt=""></p>
 <p>##在Hexo文件夹下：</p>
 <pre><code>hexo g
 hexo d

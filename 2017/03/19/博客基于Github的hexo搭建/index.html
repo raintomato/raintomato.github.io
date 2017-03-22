@@ -112,7 +112,7 @@ Github里面的东西是真的好
 <meta property="og:image" content="http://i.imgur.com/ihG3RSS.png">
 <meta property="og:image" content="http://i.imgur.com/dAYaQ6U.png">
 <meta property="og:image" content="http://i.imgur.com/Q4aqCPP.png">
-<meta property="og:updated_time" content="2017-03-20T07:58:01.170Z">
+<meta property="og:updated_time" content="2017-03-22T06:43:43.171Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客基于Github的hexo搭建">
 <meta name="twitter:description" content="借鉴来至Ryane’s Blog 感 谢
@@ -446,11 +446,11 @@ hexo server
 <li>注册完登陆后，我们就创建一个我们自己的Github Pages项目。点击New repository。</li>
 <li>创建要点如下：<br><img src="http://i.imgur.com/aFf2Vmv.png" alt=""><br><strong>要点：</strong>一定，一定注意项目名字和用户名一定对应</li>
 </ol>
-<h2 id="配置SSh密钥"><a href="#配置SSh密钥" class="headerlink" title="配置SSh密钥"></a>配置SSh密钥</h2><p>###看看是否存在SSH密钥<br>打开Git Bash，运行：</p>
+<h2 id="配置SSh密钥"><a href="#配置SSh密钥" class="headerlink" title="配置SSh密钥"></a>配置SSh密钥</h2><p>###看看是否存在SSH密钥###<br>打开Git Bash，运行：</p>
 <pre><code>$ cd ~/. ssh 
 </code></pre><p>检查你本机用户home目录下是否存在.ssh目录</p>
 <p>如果，不存在此目录，则进行第二步操作，否则，你本机已经存在ssh公钥和私钥，可以略过第二步，直接进入第三步操作。</p>
-<p>###创建一对新的SSH密钥</p>
+<p>###创建一对新的SSH密钥###</p>
 <pre><code>$ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
 #这将按照你提供的邮箱地址，创建一对密钥
 Generating public/private rsa key pair.
@@ -464,7 +464,7 @@ Enter same passphrase again: [Type passphrase again]
 Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.
 The key fingerprint is:
 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
-</code></pre><p>###在Github账户中添加你的公钥<br>先运行以下命令，</p>
+</code></pre><p>###在Github账户中添加你的公钥###<br>先运行以下命令，</p>
 <pre><code>clip &lt; ~/.ssh/id_rsa.pub
 </code></pre><p>然后：</p>
 <ol>
@@ -480,10 +480,10 @@ $ git config --global user.email  &quot;cnfeat@gmail.com&quot;//填写自己的�
 </code></pre><p>###问题<br>如有问题，参考：<br><a href="Error: Permission denied (publickey" target="_blank" rel="external">GitHub Help - Generating SSH Keys</a>)<br><a href="https://help.github.com/articles/error-permission-denied-publickey/" target="_blank" rel="external">Error: Permission denied (publickey)</a></p>
 <h2 id="将本地hexo文件部署到Github库中"><a href="#将本地hexo文件部署到Github库中" class="headerlink" title="将本地hexo文件部署到Github库中"></a>将本地hexo文件部署到Github库中</h2><p>###打开自己username.github.io的项目</p>
 <p>###然后，点击HTTPs选择ＨＴＴＰＳ类型</p>
-<p>###复制地址</p>
-<p>###打开你一开始创建的Hexo文件夹（如F:\Blog\Hexo），用记事本打开刚文件夹下的_config.yml文件</p>
+<p>###复制地址###</p>
+<p>###打开你一开始创建的Hexo文件夹（如F:\Blog\Hexo），用记事本打开刚文件夹下的_config.yml文件###</p>
 <p>###修改配置</p>
-<p><img src="http://i.imgur.com/Q4aqCPP.png" alt=""></p>
+<p>###<br><img src="http://i.imgur.com/Q4aqCPP.png" alt=""></p>
 <p>##在Hexo文件夹下：</p>
 <pre><code>hexo g
 hexo d
@@ -611,7 +611,7 @@ hexo d
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -622,7 +622,7 @@ hexo d
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -633,7 +633,7 @@ hexo d
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
