@@ -117,9 +117,16 @@ return 0;
     <link href="http://yoursite.com/2017/03/21/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     <id>http://yoursite.com/2017/03/21/蓝桥杯/</id>
     <published>2017-03-21T15:18:50.000Z</published>
-    <updated>2017-03-21T15:20:18.403Z</updated>
+    <updated>2017-03-23T16:32:47.049Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="搜集一些零散的算法和函数用法在这里"><a href="#搜集一些零散的算法和函数用法在这里" class="headerlink" title="搜集一些零散的算法和函数用法在这里"></a>搜集一些零散的算法和函数用法在这里</h1><p><a href="http://www.cnblogs.com/My-Sunshine/p/4985366.html" target="_blank" rel="external">next_permutation(a,a+1);</a></p>
+<p><a href="http://blog.csdn.net/yutianzuijin/article/details/11954939/" target="_blank" rel="external">KMP算法</a></p>
+<p><a href="http://blog.csdn.net/qq_33184171/article/details/50955548" target="_blank" rel="external">暴力求解</a></p>
+]]></content>
     
     <summary type="html">
+    
+      &lt;h1 id=&quot;搜集一些零散的算法和函数用法在这里&quot;&gt;&lt;a href=&quot;#搜集一些零散的算法和函数用法在这里&quot; class=&quot;headerlink&quot; title=&quot;搜集一些零散的算法和函数用法在这里&quot;&gt;&lt;/a&gt;搜集一些零散的算法和函数用法在这里&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;h
     
     </summary>
     
